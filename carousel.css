@@ -35,6 +35,13 @@ background: linear-gradient(180deg, rgba(255,223,176,1) 50%, rgba(255,145,77,1) 
     align-items: center;
     margin-top: 100px;
   }
+
+  @media screen and (max-width: 799px) {
+    .tile {
+      flex-direction: column;
+    }
+  }
+
   .tile:hover{
     height: 100%;
     width: 900px;
