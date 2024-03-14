@@ -213,7 +213,7 @@ body {
 @media screen and (max-width: 799px) {
   .mainHeading__image {
     height: 480px;
-    width: 70%;
+    width: 50%;
     transform: translatey(80px);
     right: -6%;
   }
@@ -281,4 +281,31 @@ body {
   .cta {
     margin-top: 16px;
   }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .mainNav__link {
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 600;
+    box-shadow: inset 0px -2px 0px #ff914d;
+    transition: all 0.4s ease, transform 0.2s ease;
+    padding: 2px 4px;
+    transform: translateY(0px);
+  }
+
+  .mainHeading__text {
+    z-index: 1;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    max-width: 620px;
+    margin-top: 100px;
+    width: 70%;
+    backdrop-filter: blur(10px);
+    animation: text 0.8s 0.6s ease backwards;
+    
+}
 }
