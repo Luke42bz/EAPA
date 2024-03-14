@@ -46,6 +46,8 @@ body {
 .mainNav__logo {
   margin-top: 40px;
   width: 150px;
+  position: fixed;
+  z-index: 1;
 }
 .mainNav__links {
   display: flex;

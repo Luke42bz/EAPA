@@ -175,7 +175,38 @@ a.cdt:visited {
 
   .cancelbtn {
     width: auto;
+    padding: 20px 36px;
+    background-color: darkred;
+  }
+  .close {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    color: darkred;
+    font-size: 95px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1050px) {
+  .modal-content {
+    background-color: #fefefe;
+    border: 10px solid #ff914d;
+    width: 80%;
+    border-radius: 25px;
+    display : inline-block;
+  }
+
+  .cancelbtn {
+    width: auto;
     padding: 10px 18px;
     background-color: darkred;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    color: darkred;
+    font-size: 95px;
   }
 }
