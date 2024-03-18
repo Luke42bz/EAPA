@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>Marie Quéguiner - Accueil</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./MainHead.css" />
+    <link rel="stylesheet" href="./MainNav.css" />
     <link rel="stylesheet" href="./carousel.css" />
     <link rel="stylesheet" href="./infoPopup.css" />
+    <link rel="stylesheet" href="./ContactPopup.css" />
     <link rel="shortcut icon" href="./img/logoEAPA.png" />
   </head>
   <body>
@@ -15,8 +17,31 @@
         <a href="" class="mainNav__link">Accueil</a>
         <a href="" class="mainNav__link">Scéances à domicile</a>
         <a href="" class="mainNav__link">Prenez le controle</a>
-        <a href="" class="mainNav__link">Articles</a>
-        <a href="" class="mainNav__link">Contacts</a>
+        <li class="mainNav__list" >
+          <a
+            onclick="document.getElementById('mainNav__ul').style.display='flex'"
+            href="#"
+            >Articles</a
+          >
+          <ul id="mainNav__ul">
+            <li class="mainNav__article"><a href="#">Article 1</a></li>
+            <li class="mainNav__article"><a href="#">Article 2</a></li>
+            <li class="mainNav__article"><a href="#">Article 3</a></li>
+            <li class="mainNav__article"><a href="#">Article 4</a></li>
+            <span
+              onclick="document.getElementById('mainNav__ul').style.display='none'"
+              class="mainNav__closeList"
+              title="Fermer"
+              >&times;</span
+            >
+          </ul>
+        </li>
+        <a
+          onclick="document.getElementById('ContactPopup').style.display='flex'"
+          style="cursor: pointer"
+          class="mainNav__link"
+          >Contacts</a
+        >
       </div>
     </nav>
     <div class="space"></div>
@@ -51,7 +76,11 @@
     <div id="infoPopup">
       <form class="modal-content animate" method="post">
         <div class="imgcontainer">
-          <h1 id="H">L’importance de solliciter un Enseignant en Activité Physique Adapté <br> (E.APA)</h1>
+          <h1 id="H">
+            L’importance de solliciter un Enseignant en Activité Physique Adapté
+            <br />
+            (E.APA)
+          </h1>
           <span
             onclick="document.getElementById('infoPopup').style.display='none'"
             class="close"
@@ -64,60 +93,73 @@
           Lorsqu’on a des besoins spécifiques : <br /><br />
 
           L’activité physique est un élément crucial pour le bien-être général
-          et la santé physique et mentale. <br/><br />
+          et la santé physique et mentale. <br /><br />
 
           Cependant, pour de nombreuses personnes ayant des besoins spécifiques,
           qu’ils soient dus à des conditions physiologiques (grossesses,
           ménopauses) ou pathologique, il peut être difficile de trouver un
-          programme d’exercice sûr et efficace. <br/><br>
+          programme d’exercice sûr et efficace. <br /><br />
 
           C’est là qu’intervient le rôle essentiel des Enseignants en Activités
-          Physiques Adaptées (E.APA). <br><br> 
+          Physiques Adaptées (E.APA). <br /><br />
 
-          Les E.APA possèdent une compréhension
-          approfondie des divers besoins spécifiques auxquels peuvent être
-          confrontées les personnes. <br><br>
-          Leur formation spécialisée englobe une
-          gamme étendue de conditions médicales, de limitations physiques et de
-          défis fonctionnels. <br><br>
-           Que ce soit pour des personnes atteintes de
-          troubles musculo-squelettiques, des maladies cardio-vasculaires, de
-          diabète, d’obésité, de troubles neurologiques, ou encore pour des
-          personnes en convalescence après une chirurgie ou un accident, les
-          E.APA sont équipés pour adapter les programmes d'exercices en fonction
-          de besoins uniques de chaque individu. <br><br>
-           Leurs connaissances
-          approfondies des différentes conditions médicales leur permettent de
-          prendre en compte les précautions nécessaires et d’identifier les
-          types d’exercices les plus appropriés pour chaque situation. <br><br>
-          
-          Ils
-          travaillent en étroite collaboration avec des professionnels de la
-          santé pour garantir une approche holistique et sécuritaire. <br><br>
-          
-          En
-          comprenant les implications physiologiques, les contraintes et les
+          Les E.APA possèdent une compréhension approfondie des divers besoins
+          spécifiques auxquels peuvent être confrontées les personnes.
+          <br /><br />
+          Leur formation spécialisée englobe une gamme étendue de conditions
+          médicales, de limitations physiques et de défis fonctionnels.
+          <br /><br />
+          Que ce soit pour des personnes atteintes de troubles
+          musculo-squelettiques, des maladies cardio-vasculaires, de diabète,
+          d’obésité, de troubles neurologiques, ou encore pour des personnes en
+          convalescence après une chirurgie ou un accident, les E.APA sont
+          équipés pour adapter les programmes d'exercices en fonction de besoins
+          uniques de chaque individu. <br /><br />
+          Leurs connaissances approfondies des différentes conditions médicales
+          leur permettent de prendre en compte les précautions nécessaires et
+          d’identifier les types d’exercices les plus appropriés pour chaque
+          situation. <br /><br />
+
+          Ils travaillent en étroite collaboration avec des professionnels de la
+          santé pour garantir une approche holistique et sécuritaire.
+          <br /><br />
+
+          En comprenant les implications physiologiques, les contraintes et les
           défis associés à chaque condition spécifique, les E.APA sont en mesure
           de concevoir des programmes d’exercices qui visent à améliorer la
           santé et le bien-être global de leurs clients, tout en minimisant les
-          risques potentiels.  <br><br>
-          
-          Cette expertise spécialisée est indispensable pour
-          assurer une approche individualisée et efficace en matière d’activité
-          physique adaptée. <br><br>
-          
-          Solliciter l’aide d’un E.APA est essentiel pour
-          toute personne ayant des besoins spécifiques en matière d’exercice. <br><br>
+          risques potentiels. <br /><br />
 
+          Cette expertise spécialisée est indispensable pour assurer une
+          approche individualisée et efficace en matière d’activité physique
+          adaptée. <br /><br />
+
+          Solliciter l’aide d’un E.APA est essentiel pour toute personne ayant
+          des besoins spécifiques en matière d’exercice. <br /><br />
 
           Leur expertise et leur capacité à concevoir des programmes d’exercices
           adaptés peuvent faire une différence significative dans la vie des
           individus en leur permettant de participer à une activité physique de
-          manière sûre, efficace et gratifiante. <br><br>
+          manière sûre, efficace et gratifiante. <br /><br />
         </div>
       </form>
     </div>
 
+    <div id="ContactPopup">
+      <form class="contact-content animate" method="post">
+        <div class="contact-container">
+          <h1 id="contact-H">Contactez moi !</h1>
+          <span
+            onclick="document.getElementById('ContactPopup').style.display='none'"
+            class="contact-close"
+            title="Fermer"
+            >&times;</span
+          >
+        </div>
+
+        <div id="container1"></div>
+      </form>
+    </div>
     <div class="app-container">
       <div class="img-nav">
         <div class="tile">
