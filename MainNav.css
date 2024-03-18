@@ -86,27 +86,31 @@
 .mainNav__list{
   position: relative;
   gap: .5rem;
+  cursor: pointer;
 }
 
 #mainNav__ul {
   position: absolute;
   top: 150%;
-  left: -3.5rem;
-  background-color: #fdf0d5 ;
+  left: -1rem;
+  background-color: #ff914d;
   border-radius: 1rem;
   padding: .5rem #ff914d;
   display: none;
   flex-direction: column;
+  min-width: 10rem;
 }
 
-.mainNav__list ul a{
+.mainNav__list li a{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  border-radius: .5rem;
-  min-width: 15rem;
+  border-radius: 1rem;
   font-weight: 600;
+  background-color: white;
+  padding:0.1rem;
+  margin: 1rem;
+
 }
 
 .mainNav__article:hover {
@@ -119,9 +123,9 @@
 .mainNav__closeList{
   display: flex;
   justify-content: center; 
-  color: #c95f1d;
-  font-size: 55px;
-  padding-bottom: 5px;
+  color: #ffdfb0;
+  font-size: 45px;
+  margin: 0;
 }
 
 .mainNav__closeList:hover,
