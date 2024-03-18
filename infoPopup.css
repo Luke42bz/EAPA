@@ -17,16 +17,16 @@
 /* Center the image and position the close button */
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
   margin-top: 0;
   position: relative;
 }
 
 #container1 {
+  background-color: #fefefe;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 5px;
-  border-radius: 25px;
+  padding-top: 8px;
   
 }
 
@@ -96,7 +96,6 @@ a.cdt:visited {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
   border: 10px solid #ff914d;
   width: 50%;
   border-radius: 25px;

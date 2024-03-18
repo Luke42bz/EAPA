@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
-footer{
+footer {
   background-image: url(./img/footer.png);
   background-size: contain;
   margin: 0;
@@ -29,6 +29,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.space {
+  height: 50px;
+}
+
 .mainNav {
   width: 100%;
   height: 80px;
@@ -44,9 +48,10 @@ body {
 }
 
 .mainNav__logo {
-  margin-top: 40px;
   width: 150px;
   position: fixed;
+  left: 40px;
+  top: 20px;
   z-index: 1;
 }
 .mainNav__links {
@@ -69,7 +74,7 @@ body {
 .mainNav__link:hover {
   transform: translateY(-6px);
   box-shadow: inset 0px -25px 0px #ff914d;
-  color : #ffdfb0;
+  color: #ffdfb0;
   border-radius: 25px;
 }
 
@@ -78,10 +83,9 @@ body {
   height: 100%;
   position: relative;
   padding: 0 40px;
-  background-image : url(./img/background.png);
+  background-image: url(./img/background.png);
   background-size: contain;
   border-radius: 25px;
-
 }
 
 .mainHeading__content {
@@ -184,7 +188,8 @@ body {
     transform: translatey(200px);
   }
 }
-.mainHeading__image:before, .mainHeading__image:after {
+.mainHeading__image:before,
+.mainHeading__image:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -228,7 +233,6 @@ body {
   box-shadow: inset 0px 0px 0px rgba(99, 116, 152, 0.2);
   transition: all 0.4s ease;
   border-radius: 18px;
-
 }
 .cta:hover {
   border: 1px solid #ffde59;
@@ -237,7 +241,6 @@ body {
   color: #ffde59;
   border-radius: 18px;
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 1050px) {
   .mainNav__link {
@@ -261,8 +264,12 @@ body {
     width: 70%;
     backdrop-filter: blur(10px);
     animation: text 0.8s 0.6s ease backwards;
-    
-}
+  }
+  .mainNav__logo {
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 799px) {
@@ -304,8 +311,14 @@ body {
   }
 }
 
-@media screen and (max-width: 1055px) {
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
   .mainNav_link {
     font-size: 10px;
+  }
+
+  .mainNav__logo {
+    width: 80px;
+    position: fixed;
+    z-index: 1;
   }
 }
