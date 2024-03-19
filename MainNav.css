@@ -44,7 +44,59 @@
   }
 
 
+  /*Styles pour le bouton "Articles" ainsi que pour son déroulant*/
+  .mainNav__list{
+    position: relative;
+    gap: .5rem;
+    cursor: pointer;
+  }
+  
+  #mainNav__ul {
+    position: absolute;
+    top: 150%;
+    left: -1rem;
+    background-color: #ff914d;
+    border-radius: 1rem;
+    padding: .5rem #ff914d;
+    display: none;
+    flex-direction: column;
+    min-width: 10rem;
+  }
+  
+  .mainNav__list li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-weight: 600;
+    background-color: white;
+    padding:0.1rem;
+    margin: 1rem;
+  }
+  
+  .mainNav__article:hover {
+   color:#ff914d;
+   transform: translateY(-3px);
+   transition: all 0.5s;
+   font-weight: 800;
+  }
+  
+/*Styles pour le bouton "fermer"*/
+  .mainNav__closeList{ 
+    display: flex;
+    justify-content: center; 
+    color: #ffdfb0;
+    font-size: 45px;
+    margin: 0;
+  }
+  
+  .mainNav__closeList:hover,
+  .mainNav__closeList:focus {
+    cursor: pointer;
+  }
 
+
+/*Responsiveness pour Tablette et Tel*/
   @media only screen and (min-width: 768px) and (max-width: 1050px) {
     .mainNav__link {
       letter-spacing: 1px;
@@ -62,6 +114,28 @@
       position: fixed;
       z-index: 1;
     }
+
+    .mainNav__list li a{
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-left: 20px;
+      font-weight: 600;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
+
+    .mainNav__list>a{
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-left: 20px;
+      font-weight: 600;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
   }
 
   @media screen and (max-width: 799px) {
@@ -70,65 +144,41 @@
     }
   }
 
+
+
+
+/*Responsiveness pour Ordi avec basse résolution*/
   @media only screen and (min-width: 1300px) and (max-width: 1500px) {
     .mainNav_link {
       font-size: 10px;
     }
-  
+    
     .mainNav__logo {
       width: 80px;
       position: fixed;
       z-index: 1;
     }
+
+    .mainNav__list li a{
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-left: 20px;
+      font-weight: 600;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
+
+    .mainNav__list>a{
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-left: 20px;
+      font-weight: 600;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
   }
-
-
-.mainNav__list{
-  position: relative;
-  gap: .5rem;
-  cursor: pointer;
-}
-
-#mainNav__ul {
-  position: absolute;
-  top: 150%;
-  left: -1rem;
-  background-color: #ff914d;
-  border-radius: 1rem;
-  padding: .5rem #ff914d;
-  display: none;
-  flex-direction: column;
-  min-width: 10rem;
-}
-
-.mainNav__list li a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  font-weight: 600;
-  background-color: white;
-  padding:0.1rem;
-  margin: 1rem;
-
-}
-
-.mainNav__article:hover {
- color:#ff914d;
- transform: translateY(-3px);
- transition: all 0.5s;
- font-weight: 800;
-}
-
-.mainNav__closeList{
-  display: flex;
-  justify-content: center; 
-  color: #ffdfb0;
-  font-size: 45px;
-  margin: 0;
-}
-
-.mainNav__closeList:hover,
-.mainNav__closeList:focus {
-  cursor: pointer;
-}
+  
