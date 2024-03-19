@@ -8,9 +8,36 @@ body {
     rgba(255, 145, 77, 1) 85%
   );
 }
-.app-container {
+
+.tile h1{
+font-size: 3vw;
+font-weight: 600;
+color: white;
+text-decoration: double underline;
+text-decoration-thickness: 0.1vw;
+}
+
+.tile p{
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+.Car__title{
+  text-align: center;
+  color: #ff7926 ;
+  font-weight: 800;
+  font-size: 3vw;
+  background-color: white;
+  border-radius: 25px;
+  width: fit-content;
+  margin: auto;
+  border: 10px solidwhite;
+  margin-top: 15%;
+}
+
+.mainCar__cont {
   display: flex;
-  height: 75vh;
+  height: 50vh;
   justify-content: center;
   align-items: center;
 }
@@ -26,7 +53,7 @@ body {
   display: block;
   position: absolute;
   z-index: auto;
-  font-size: 24px;
+  font-size: 1.2vw;
   color: black;
   font-family: "Raleway";
   opacity: 1;
@@ -86,7 +113,7 @@ body {
   object-position: center top;
 }
 
-/* SET IMGs*/
+/* Couleurs du caroussel*/
 .tile:nth-child(1) .img {
   background-color: #d4641e;
 }
@@ -95,6 +122,9 @@ body {
 }
 .tile:nth-child(3) .img {
   background-color: #ff7926;
+}
+.tile:nth-child(4) .img {
+  background-color: #df722ebd;
 }
 
 

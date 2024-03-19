@@ -22,7 +22,8 @@
   padding-right: 20px;
   padding-bottom: 5px;
   padding-top: 8px;
-  
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;  
 }
 
 #sub, #connect{
@@ -40,8 +41,8 @@
 /* The Modal (background) */
 #ContactPopup {
   display: none; /* Hidden by default */
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content:center;
+  align-items: center;
   flex-direction: row;
   align-self: center;
   position: fixed; /* Stay in place */
@@ -61,8 +62,6 @@
   width: 20%;
   border-radius: 25px;
   display : inline-block;
-  margin-right: 10px;
-  margin-top: 20px;
 }
 
 /* The Close Button (x) */
@@ -93,16 +92,9 @@
   to {transform: scale(1)}
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
+
+
+
 #actimg{
   height: 65px;
   width: 65px;
