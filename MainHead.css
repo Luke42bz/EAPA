@@ -5,6 +5,7 @@ footer {
   margin: 0;
   height: 175px;
   border-radius: 25px;
+  margin-top: 25vh;
 }
 
 * {
@@ -244,4 +245,12 @@ body {
   .mainHeading__content {
     min-height: 500px;
   }
+}
+
+
+@media only screen and (orientation: portrait) and (min-width: 760px) and (max-width: 1050px) {
+.mainHeading__text {
+  backdrop-filter:none;
+  background-color: rgba(255, 215, 163, 0.85);
+}
 }
