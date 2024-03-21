@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./infoPopup.css" />
     <link rel="stylesheet" href="./ContactPopup.css" />
     <link rel="shortcut icon" href="./img/logoEAPA.png" />
+    <link rel="stylesheet" href="./MainStyle.css" />
   </head>
   <body>
     <img class="mainNav__logo" src="./img/logoEAPA.png" />
@@ -16,7 +17,7 @@
       <div class="mainNav__links">
         <a href="./index.html" class="mainNav__link">Accueil</a>
         <a href="" class="mainNav__link">Scéances à domicile</a>
-        <a href="" class="mainNav__link">Prenez le controle</a>
+        <a href="./controle.html" class="mainNav__link">Prenez le controle</a>
         <li class="mainNav__list">
           <a
             onclick="document.getElementById('mainNav__ul').style.display='flex'"
@@ -45,6 +46,60 @@
         >
       </div>
     </nav>
+
+    <div id="ContactPopup">
+      <form class="contact-content animate" method="post">
+        <div class="contact-container">
+          <h1 id="contact-H">Contactez moi !</h1>
+          <span
+            onclick="document.getElementById('ContactPopup').style.display='none'"
+            class="contact-close"
+            title="Fermer"
+            >&times;</span
+          >
+        </div>
+        <div class="contact-infos">
+          <ul>
+            <ul>
+              <li>
+                <p class="contact-label">Par Téléphone :</p>
+              </li>
+              <li>
+                <p class="contact">07.65.77.87.71</p>
+              </li>
+            </ul>
+            <br />
+            <ul>
+              <li>
+                <p class="contact-label">Par mail :</p>
+              </li>
+              <li>
+                <p class="contact">queguinermarie.pro@gmail.com</p>
+              </li>
+            </ul>
+            <br />
+            <ul>
+              <li><p class="contact-if">OU</p></li>
+            </ul>
+            <ul>
+              <br />
+              <li>
+                <p class="contact">
+                  Sur mon
+                  <a
+                    class="contact-link"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/marie-qu%C3%A9guiner-8241b1199/"
+                    >LinkedIn</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </form>
+    </div>
+
     <div class="space"></div>
     <header class="mainHeading">
       <div class="mainHeading__content">
@@ -151,48 +206,6 @@
             physique de manière sûre, efficace et gratifiante.
           </p>
           <br /><br />
-        </div>
-      </form>
-    </div>
-
-    <div id="ContactPopup">
-      <form class="contact-content animate" method="post">
-        <div class="contact-container">
-          <h1 id="contact-H">Contactez moi !</h1>
-          <span
-            onclick="document.getElementById('ContactPopup').style.display='none'"
-            class="contact-close"
-            title="Fermer"
-            >&times;</span
-          >
-        </div>
-        <div class="contact-infos">
-          <ul>
-            <ul>
-              <li>
-                <p class="contact-label">Par Téléphone :</p>
-              </li>
-              <li>
-                <p class="contact">07.65.77.87.71</p>
-              </li>
-            </ul><br>
-            <ul>
-              <li>
-                <p class="contact-label">Par mail :</p>
-              </li>
-              <li>
-                <p class="contact">queguinermarie.pro@gmail.com</p>
-              </li>
-            </ul><br>
-            <ul><li><p class="contact-if">OU</p></li></ul>
-            <ul><br>
-              <li>
-                <p class="contact">Sur mon <a class="contact-link" target="_blank" href="https://www.linkedin.com/in/marie-qu%C3%A9guiner-8241b1199/">LinkedIn</a></p>
-              </li>
-
-            </ul>
-          </ul>
-
         </div>
       </form>
     </div>

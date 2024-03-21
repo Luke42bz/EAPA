@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 223, 176);
+    background-color: linear-gradient(
+        180deg,
+        rgba(255, 223, 176, 1) 50%,
+        rgba(255, 145, 77, 1) 85%
+      );
+    font-family: "Raleway", sans-serif;
+}
+.chantier-container{
+    display: flex;
+    justify-content: center;
+}
+
+.chantier-Img{
+    width: 25%;
+}
