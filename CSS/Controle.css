@@ -9,9 +9,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-footer {
-  background-image: url(img/footer2.png);
-}
+
 .chantier-container {
   display: flex;
   justify-content: center;

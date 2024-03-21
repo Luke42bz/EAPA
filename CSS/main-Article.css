@@ -1,5 +1,5 @@
 body{
-    background-image: url(img\article-background.png);
+    background-image: url(img/article-background.png);
     background-repeat:repeat-y;
     background-size:auto;
     font-family: "Raleway", sans-serif;
@@ -23,16 +23,28 @@ body{
     flex-direction: column;
     margin: auto;
     width: 55%;
+    margin-bottom: 100px;
+    padding-top: 200px;
   }
 
   .Titre-Article{
     background-color:  white;
-    border: 10px solid #d4641e;
+    border: 5px solid #d4641e;
     border-radius: 25px;
+    padding: 15px;
+    text-align:center;
+    font-weight: 900;
+    font-size:2vw;    
+    color: #d4641e;
+
   }
 
   .Texte-Article{
     background-color:  white;
-    border: 10px solid #d4641e;
+    border: 5px solid #d4641e;
     border-radius: 25px;
+    padding: 15px;
+    text-align: justify;
+    font-size: 1vw;
+    font-weight: 600;
   }

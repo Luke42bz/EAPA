@@ -1,122 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Prenez le controle !</title>
-    <link rel="stylesheet" href="CSS\MainHead.css" />
-    <link rel="stylesheet" href="CSS\MainNav.css" />
-    <link rel="stylesheet" href="CSS\Carousel.css" />
-    <link rel="stylesheet" href="CSS\infoPopup.css" />
-    <link rel="stylesheet" href="CSS\ContactPopup.css" />
-    <link rel="shortcut icon" href="CSS\img\logoEAPA.png" />
-    <link rel="stylesheet" href="CSS\Controle.css" />
-    <link rel="stylesheet" href="CSS\MainStyle.css" />
-  </head>
-  <body>
-    <img class="mainNav__logo" src="CSS\img\logoEAPA.png" />
-    <nav class="mainNav" id="mainNav">
-      <div class="mainNav__links">
-        <a href="index.html" class="mainNav__link">Accueil</a>
-        <a href="https://www.sportsantedomicile.fr/carte-france/coach/marie-queguiner" class="mainNav__link">Scéances à domicile</a>
-        <a href="controle.html" class="mainNav__link">Prenez le controle</a>
-        <li class="mainNav__list">
-          <a
-            onclick="document.getElementById('mainNav__ul').style.display='flex'"
-            >Articles</a
-          >
-          <ul id="mainNav__ul" class="animate">
-            <li class="mainNav__article">
-              <a href="Endometriose.html">Article 1</a>
-            </li>
-            <li class="mainNav__article"><a href="#">Article 2</a></li>
-            <li class="mainNav__article"><a href="#">Article 3</a></li>
-            <li class="mainNav__article"><a href="#">Article 4</a></li>
-            <span
-              onclick="document.getElementById('mainNav__ul').style.display='none'"
-              class="mainNav__closeList"
-              title="Fermer"
-              >&times;</span
-            >
-          </ul>
-        </li>
-        <a
-          onclick="document.getElementById('ContactPopup').style.display='flex'"
-          style="cursor: pointer"
-          class="mainNav__link"
-          >Contacts</a
-        >
-      </div>
-    </nav>
 
-    <div id="ContactPopup">
-      <form class="contact-content animate" method="post">
-        <div class="contact-container">
-          <h1 id="contact-H">Contactez moi !</h1>
-          <span
-            onclick="document.getElementById('ContactPopup').style.display='none'"
-            class="contact-close"
-            title="Fermer"
-            >&times;</span
-          >
-        </div>
-        <div class="contact-infos">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prenez le controle !</title>
+  <link rel="stylesheet" href="CSS\MainHead.css" />
+  <link rel="stylesheet" href="CSS\MainNav.css" />
+  <link rel="stylesheet" href="CSS\Carousel.css" />
+  <link rel="stylesheet" href="CSS\infoPopup.css" />
+  <link rel="stylesheet" href="CSS\ContactPopup.css" />
+  <link rel="shortcut icon" href="CSS\img\logoEAPA.png" />
+  <link rel="stylesheet" href="CSS\Controle.css" />
+  <link rel="stylesheet" href="CSS\MainStyle.css" />
+</head>
+
+<body>
+  <img class="mainNav__logo" src="CSS\img\logoEAPA.png" />
+  <nav class="mainNav" id="mainNav">
+    <div class="mainNav__links">
+      <a href="index.html" class="mainNav__link">Accueil</a>
+      <a href="https://www.sportsantedomicile.fr/carte-france/coach/marie-queguiner" class="mainNav__link">Scéances à
+        domicile</a>
+      <a href="controle.html" class="mainNav__link">Prenez le controle</a>
+      <li class="mainNav__list">
+        <a onclick="document.getElementById('mainNav__ul').style.display='flex'">Articles</a>
+        <ul id="mainNav__ul" class="animate">
+          <li class="mainNav__article">
+            <a href="EAPA.html">L’importance d'un <br />
+              Enseignant en Activité Physique Adapté</a>
+          </li>
+          <li class="mainNav__article">
+            <a href="Endometriose.html">L’activité physique et la gestion de <br />l’endométriose</a>
+          </li>
+          <li class="mainNav__article">
+            <a href="CancerSein.html">L’impact de l'activité physique sur <br />le cancer du sein</a>
+          </li>
+          <li class="mainNav__article">
+            <a href="SOPK.html">La gestion du syndrome des <br />ovaires polykystiques</a>
+          </li>
+          <span onclick="document.getElementById('mainNav__ul').style.display='none'" class="mainNav__closeList"
+            title="Fermer">&times;</span>
+        </ul>
+      </li>
+      <a onclick="document.getElementById('ContactPopup').style.display='flex'" style="cursor: pointer"
+        class="mainNav__link">Contacts</a>
+    </div>
+  </nav>
+
+  <div id="ContactPopup">
+    <form class="contact-content animate" method="post">
+      <div class="contact-container">
+        <h1 id="contact-H">Contactez moi !</h1>
+        <span onclick="document.getElementById('ContactPopup').style.display='none'" class="contact-close"
+          title="Fermer">&times;</span>
+      </div>
+      <div class="contact-infos">
+        <ul>
           <ul>
-            <ul>
-              <li>
-                <p class="contact-label">Par Téléphone :</p>
-              </li>
-              <li>
-                <p class="contact">07.65.77.87.71</p>
-              </li>
-            </ul>
-            <br />
-            <ul>
-              <li>
-                <p class="contact-label">Par mail :</p>
-              </li>
-              <li>
-                <p class="contact">queguinermarie.pro@gmail.com</p>
-              </li>
-            </ul>
-            <br />
-            <ul>
-              <li><p class="contact-if">OU</p></li>
-            </ul>
-            <ul>
-              <br />
-              <li>
-                <p class="contact">
-                  Sur mon
-                  <a
-                    class="contact-link"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/marie-qu%C3%A9guiner-8241b1199/"
-                    >LinkedIn</a
-                  >
-                </p>
-              </li>
-            </ul>
+            <li>
+              <p class="contact-label">Par Téléphone :</p>
+            </li>
+            <li>
+              <p class="contact">07.65.77.87.71</p>
+            </li>
           </ul>
-        </div>
-      </form>
-    </div>
-    
-    <div class="space"></div>
-
-    <div class="chantier-container">
-      <img class="chantier-Img" src="./img/chantier.png" alt="" />
-      <div class="chantier-content"><br>
-        <p class="chantier-title">A VENIR !</p> <br>
-        <p class="chantier-text"></p>
+          <br />
+          <ul>
+            <li>
+              <p class="contact-label">Par mail :</p>
+            </li>
+            <li>
+              <p class="contact">queguinermarie.pro@gmail.com</p>
+            </li>
+          </ul>
+          <br />
+          <ul>
+            <li>
+              <p class="contact-if">OU</p>
+            </li>
+          </ul>
+          <ul>
+            <br />
+            <li>
+              <p class="contact">
+                Sur mon
+                <a class="contact-link" target="_blank"
+                  href="https://www.linkedin.com/in/marie-qu%C3%A9guiner-8241b1199/">LinkedIn</a>
+              </p>
+            </li>
+          </ul>
+        </ul>
       </div>
+    </form>
+  </div>
+
+  <div class="space"></div>
+
+  <div class="chantier-container">
+    <img class="chantier-Img" src="CSS\img\chantier.png" alt="" />
+    <div class="chantier-content">
+      <br />
+      <p class="chantier-title">A VENIR !</p>
+      <br />
+      <p class="chantier-text"></p>
     </div>
+  </div>
 
+  <footer></footer>
 
-    <footer></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="JS\carousel.js"></script>
+</body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="JS\carousel.js"></script>
-  </body>
 </html>
