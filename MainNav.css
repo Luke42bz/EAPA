@@ -138,6 +138,47 @@
     }
   }
 
+  @media only screen and (orientation:portrait) and (min-width: 768px) and (max-width: 1050px) {
+    .mainNav__link {
+      letter-spacing: 1px;
+      font-size: 16px;
+      margin-left: 20px;
+      font-weight: 700;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
+
+    .mainNav__logo {
+      width: 80px;
+      position: fixed;
+      z-index: 1;
+    }
+
+    .mainNav__list li a{
+      letter-spacing: 1px;
+      font-size: 16px;
+      margin-left: 20px;
+      font-weight: 700;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
+
+    .mainNav__list>a{
+      letter-spacing: 1px;
+      font-size: 16px;
+      margin-left: 20px;
+      font-weight: 700;
+      box-shadow: inset 0px -2px 0px #ff914d;
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+    }
+  }
+
   @media screen and (max-width: 799px) {
     .mainNav {
       padding: 0 20px;

@@ -6,5 +6,6 @@ $('.tile').on('click', function(){
 
 
 addEventListener("dblclick", (event) => {});
+addEventListener("touchstart",(event)=> {});
 
 ondblclick = (event) => {$('.tile').removeClass('selected');};

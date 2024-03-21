@@ -1,9 +1,11 @@
 #contact-H{
-  background-color: #e6b469;
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
   margin: 0;
-  color: black;
-  font-size: 25px;
-  font-weight: 600;
+  color: #c95f1d;
+  font-size: 1.8vw;
+  font-weight: 800;
 }
 
 /* Center the image and position the close button */
@@ -14,16 +16,16 @@
   margin-top: 0;
   cursor:default;
   justify-content: space-evenly;
+  z-index: 1;
 }
 
-#container1 {
+.contact-infos {
   background-color: #fefefe;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 5px;
-  padding-top: 8px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;  
+  padding-bottom: 25px;
+  padding-top: 15px;
+  border-radius: 25px;
 }
 
 #sub, #connect{
@@ -46,7 +48,7 @@
   flex-direction: row;
   align-self: center;
   position: fixed; /* Stay in place */
-  z-index: 0.5; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -115,18 +117,85 @@
   transform: translateY(4px);
 }
 
+.contact-infos{
+  text-align: center;
+}
+
+.contact-label{
+  font-size: 1.2vw;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #c95f1d;
+}
+
+.contact-if{
+  font-size: 1.2vw;
+  font-weight: 800;
+  color: #c95f1d;
+}
+
+.contact{
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+
+.contact-link{
+  background-color: #c95f1d;
+  color: white;
+  border-radius: 25px;
+  padding: 5px;
+  transition: all 1s;
+}
+
+.contact-link:hover{
+  background-color: #ff7926;
+  transition: all 0.5s;
+}
+
+
+
+
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1050px) {
-  .modal-content {
-    width: 80%;
+  .contact-content {
+    width: 55%;
+    border-radius: 25px;
+    display : inline-block;
+  }
+
+  .contact-container{
+    margin-bottom: 20px;
+  }
+
+  .contact-close {
+    font-size: 100px;
+  }
+
+  .Contact-Popup{
+    justify-content: flex-end;
+  }
+
+  #contact-H{
+    font-size: 4.8vw;
+  }
+
+  .contact-label{
+    font-size: 4vw;
+  }
+  
+  .contact-if{
+    font-size: 3.5vw;
+  }
+  
+  .contact{
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1050px) {
+  .contact-content {
+    width: 30%;
     border-radius: 25px;
     display : inline-block;
   }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1050px) {
-  .modal-content {
-    width: 80%;
-    border-radius: 25px;
-    display : inline-block;
-  }
-}
