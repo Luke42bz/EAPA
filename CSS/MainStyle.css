@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
 footer {
-  background-image: url(./img/footer.png);
+  background-image: url(img/footer.png);
   background-size: contain;
   margin: 0;
   height: 175px;

@@ -10,7 +10,7 @@ body {
 }
 
 footer {
-  background-image: url(./img/footer2.png);
+  background-image: url(img/footer2.png);
 }
 .chantier-container {
   display: flex;

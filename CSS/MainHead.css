@@ -3,7 +3,7 @@
   height: 100%;
   position: relative;
   padding: 0 40px;
-  background-image: url(./img/background.png);
+  background-image: url(CSS\img\background.png);
   background-size: contain;
   border-radius: 25px;
 }
