@@ -39,12 +39,13 @@ footer {
 }
 
 @media only screen and (orientation: portrait) and (min-width: 760px) and (max-width: 1050px) {
-  .chantier-container {
-    height: 80px;
-    width: 150px;
-  }
+
+    .space {
+        height: 430px;
+      }
+
   .chantier-Img {
-    height: 28vh;
+    height: 24vh;
   }
 
   footer {
