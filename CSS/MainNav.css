@@ -63,6 +63,7 @@
   display: none;
   flex-direction: column;
   min-width: 30rem;
+  z-index:0;
 }
 
 .mainNav__list li a {
@@ -313,7 +314,6 @@
 
   .mainNav__list li a {
     letter-spacing: 1px;
-    font-size: 14px;
     margin-left: 20px;
     font-weight: 600;
     box-shadow: inset 0px -2px 0px #ff914d;
@@ -324,7 +324,6 @@
 
   .mainNav__list > a {
     letter-spacing: 1px;
-    font-size: 14px;
     margin-left: 20px;
     font-weight: 600;
     box-shadow: inset 0px -2px 0px #ff914d;
