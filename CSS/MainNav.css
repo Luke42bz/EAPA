@@ -51,6 +51,8 @@
   position: relative;
   gap: 0.5rem;
   cursor: pointer;
+  z-index:289;
+
 }
 
 #mainNav__ul {
@@ -63,7 +65,7 @@
   display: none;
   flex-direction: column;
   min-width: 30rem;
-  z-index:0;
+  z-index:289;
 }
 
 .mainNav__list li a {
